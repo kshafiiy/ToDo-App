@@ -1,0 +1,119 @@
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 160px;
+    font-size: 36px;
+    color: #444;
+}
+
+/* Form Styling */
+#taskForm {
+    margin: 20px auto;
+    width: 300px;
+}
+
+#taskForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+#taskForm input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Buttons Styling */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#buttonaddtask {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#clearlist {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Task List Styling */
+fieldset {
+    margin: 20px auto;
+    width: 350px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 18px;
+    color: #555;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #eee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#taskList li button {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+#taskList li button:nth-child(1) {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#taskList li button:nth-child(2) {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Done Task Styling */
+#taskList li.done {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #d4edda;
+}

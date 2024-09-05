@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do App</title>
+</head>
+<body>
+    <h1>TODO APP</h1>
+    <form id="taskForm">
+        <label for="addtask">Add Task:
+            <input type="text" name="addTask" placeholder="Enter Your Tasks" id="addtask">
+        </label>
+    </form>
+    <button id="buttonaddtask" onclick="myTask()">Add Task</button>
+    <button id="clearlist" onclick="clearTasks()">Clear List</button>
+
+    <fieldset>
+        <legend>My Today's Tasks Are:</legend>
+        <div class="tdaytask"> 
+            <ol id="taskList">
+                <!-- Tasks will be dynamically added here -->
+            </ol>
+        </div>
+    </fieldset>
+
+    <script src="script.js"></script>
+</body>
+</html>
